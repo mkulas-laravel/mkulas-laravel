@@ -64,7 +64,7 @@ class GetDataGuzzle extends Model
      */
     public function insertNamedays()
     {
-        $period = CarbonPeriod::create('2021-01-01', '2021-02-31');
+        $period = CarbonPeriod::create('2021-01-01', '2021-12-31');
 
         $outputProgress = $this->consoleOutput;
         $progress = new ProgressBar($outputProgress);
