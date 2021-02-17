@@ -1,0 +1,78 @@
+header,main,footer,nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex !important;
+    align-items: center !important;
+}
+
+main,footer{
+    justify-content: center !important;
+}
+
+header{
+    height: 70px;
+    top: 0;
+    nav{
+        justify-content: right !important;
+    }
+    nav ul {
+        margin: 15px 0 0 0 ;
+        li{
+            list-style: none;
+            float: left;
+            margin: 30px 10px;
+
+            input{
+                background: none;
+                border: none;
+                padding: 2px 2px 2px 10px;
+
+                :hover, :focus{
+                    outline: 1px solid rgba(33,33,33,0.5);
+                }
+            }
+        }
+    }
+    img{
+        justify-content: left !important;
+    }
+}
+
+main{
+    top: 70px;
+    bottom: 50px;
+    background: rgb(2,52,135);
+    background: -moz-linear-gradient(90deg, rgba(2,52,135,1) 0%, rgba(6,0,226,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,52,135,1) 0%, rgba(6,0,226,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,52,135,1) 0%, rgba(6,0,226,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023487",endColorstr="#00d4ff",GradientType=1);
+    color: $white;
+    .card{
+        color: #333333;
+        width: 20rem;
+        h5 span{
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+    }
+    #search_list{
+        position: absolute;
+        right: 110px;
+        top: 0;
+        li{
+            font-size: 20px;
+            list-style: none;
+            a {
+                color: #fffbdb;
+            }
+        }
+    }
+}
+
+footer{
+    bottom: 0;
+    height: 50px;
+}
+
+
